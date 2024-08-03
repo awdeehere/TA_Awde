@@ -40,19 +40,17 @@ class ArtikelController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'judul' => 'required|string|max:255',
-            'konten' => 'required|string',
-            'thumbnail' => 'required|image|mimes:png,jpg,jpeg|max:5120',
+            'judul' => 'max:255|required',
+            'konten' => 'required',
+            'thumbnail' => 'image|mimes:png,jpg,jpeg|max:5120|required',
         ], [
-            'judul.required' => 'Nama Harus Diisi',
-            'judul.string' => 'Nama Harus Berupa Kalimat',
-            'judul.max' => 'Nama Maksimal 255 Karakter',
-            'konten.required' => 'Tahun Harus Diisi',
-            'konten.string' => 'Tahun Harus Berupa Kalimat',
-            'thumbnail.required' => 'Gambar Harus Diisi',
-            'thumbnail.image' => 'Gambar Harus Berupa Gambar',
-            'thumbnail.mimes' => 'Gambar Harus Berekstensi png, jpg, atau jpeg',
-            'thumbnail.max' => 'Gambar Tidak Boleh Lebih Dari 5 MB',
+            'judul.max' => 'Judul Maksimal 255 Karakter',
+            'judul.required' => 'Judul Harus Diisi',
+            'konten.required' => 'Konten Harus Diisi',
+            'thumbnail.image' => 'Thumbnail Harus Berupa Gambar',
+            'thumbnail.mimes' => 'Thumbnail Harus Berekstensi png, jpg, atau jpeg',
+            'thumbnail.max' => 'Thumbnail Tidak Boleh Lebih Dari 5 MB',
+            'thumbnail.required' => 'Thumbnail Harus Diisi'
         ]);
 
         if ($validator->fails()) {
@@ -76,16 +74,18 @@ class ArtikelController extends Controller
     {
 
         $validator = Validator::make($request->all(), [
-            'judul' => 'string|max:255',
-            'konten' => 'string|max:255',
-            'thumbnail' => 'image|mimes:png,jpg,jpeg|max:5120',
+            'judul' => 'string|max:255|required',
+            'konten' => 'required',
+            'thumbnail' => 'image|mimes:png,jpg,jpeg|max:5120|required',
         ], [
             'judul.string' => 'Nama Harus Berupa Kalimat',
             'judul.max' => 'Nama Maksimal 255 Karakter',
-            'konten.string' => 'Tahun Harus Berupa Kalimat',
+            'judul.required' => 'Judul Harus Diisi',
+            'konten.required' => 'Konten Harus Diisi',
             'thumbnail.image' => 'Gambar Harus Berupa Gambar',
             'thumbnail.mimes' => 'Gambar Harus Berekstensi png, jpg, atau jpeg',
             'thumbnail.max' => 'Gambar Tidak Boleh Lebih Dari 5 MB',
+            'thumbnail.required' => 'Thumbnail Harus Diisi'
         ]);
 
         if ($validator->fails()) {

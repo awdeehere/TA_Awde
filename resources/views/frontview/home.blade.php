@@ -2,16 +2,16 @@
     <header class="slider">
         <div class="swiper-container slider-images">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" data-background="{{ url('/') }}/frontview/images/1.jpg">
-                    <div class="mobile-slide" data-background="{{ url('/') }}/frontview/images/slide-mobile01.jpg">
+                <div class="swiper-slide" data-background="{{ url('public') }}/frontview/images/1.jpg">
+                    <div class="mobile-slide" data-background="{{ url('public') }}/frontview/images/slide-mobile01.jpg">
                     </div>
                 </div>
-                <div class="swiper-slide" data-background="{{ url('/') }}/frontview/images/2.jpg">
-                    <div class="mobile-slide" data-background="{{ url('/') }}/frontview/images/slide-mobile02.jpg">
+                <div class="swiper-slide" data-background="{{ url('public') }}/frontview/images/2.jpg">
+                    <div class="mobile-slide" data-background="{{ url('public') }}/frontview/images/slide-mobile02.jpg">
                     </div>
                 </div>
-                <div class="swiper-slide" data-background="{{ url('/') }}/frontview/images/Gallery.jpg">
-                    <div class="mobile-slide" data-background="{{ url('/') }}/frontview/images/slide-mobile03.jpg">
+                <div class="swiper-slide" data-background="{{ url('public') }}/frontview/images/Gallery.jpg">
+                    <div class="mobile-slide" data-background="{{ url('public') }}/frontview/images/slide-mobile03.jpg">
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                 </div>
                 <!-- end col-12 -->
                 <div class="col-lg-7">
-                    <figure class="image-box" data-scroll data-scroll-speed="-1"> <img src="{{ url('/') }}/images/nage.jpg" alt="Image">
+                    <figure class="image-box" data-scroll data-scroll-speed="-1"> <img src="{{ url('public') }}/images/nage.jpg" alt="Image">
                     </figure>
                 </div>
                 <!-- end col-7 -->
@@ -100,7 +100,7 @@
                     <div class="side-icon-list right-side">
                         <ul>
                             <li>
-                                <figure> <img src="{{ url('/') }}/frontview/images/icon01.png" alt="Image">
+                                <figure> <img src="{{ url('public') }}/frontview/images/icon01.png" alt="Image">
                                 </figure>
                                 <div class="content">
                                     <h5>Jam Buka</h5>
@@ -110,7 +110,7 @@
                                 <!-- end content -->
                             </li>
                             <li>
-                                <figure> <img src="{{ url('/') }}/frontview/images/icon02.png" alt="Image">
+                                <figure> <img src="{{ url('public') }}/frontview/images/icon02.png" alt="Image">
                                 </figure>
                                 <div class="content">
                                     <h5>Book Online</h5>
@@ -121,7 +121,7 @@
                                 <!-- end content -->
                             </li>
                             <li>
-                                <figure> <img src="{{ url('/') }}/frontview/images/icon03.png" alt="Image">
+                                <figure> <img src="{{ url('public') }}/frontview/images/icon03.png" alt="Image">
                                 </figure>
                                 <div class="content">
                                     <h5>Alamat Kami</h5>
@@ -159,9 +159,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6">
                     <div class="exhibition-box" data-scroll data-scroll-speed="-1">
-                        <figure> <a href="#"><img src="{{ url('/') }}/frontview/images/event01.jpg" alt="Image" class="img"></a>
+                        <figure> <a href="#"><img src="{{ url('public') }}/frontview/images/event01.jpg" alt="Image" class="img"></a>
                             <div class="info">
-                                <figure class="i"><img src="{{ url('/') }}/frontview/images/icon-info.png" alt="Image"></figure>
+                                <figure class="i"><img src="{{ url('public') }}/frontview/images/icon-info.png" alt="Image"></figure>
                                 <span>50% off exhibitions</span>
                             </div>
                             <!-- end info -->
@@ -178,9 +178,9 @@
                 <!-- end col-4 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="exhibition-box" data-scroll data-scroll-speed="1">
-                        <figure> <a href="#"><img src="{{ url('/') }}/frontview/images/event02.jpg" alt="Image" class="img"></a>
+                        <figure> <a href="#"><img src="{{ url('public') }}/frontview/images/event02.jpg" alt="Image" class="img"></a>
                             <div class="info">
-                                <figure class="i"><img src="{{ url('/') }}/frontview/images/icon-info.png" alt="Image"></figure>
+                                <figure class="i"><img src="{{ url('public') }}/frontview/images/icon-info.png" alt="Image"></figure>
                                 <span>50% off exhibitions</span>
                             </div>
                             <!-- end info -->
@@ -197,9 +197,9 @@
                 <!-- end col-4 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="exhibition-box" data-scroll data-scroll-speed="-0.5">
-                        <figure> <a href="#"><img src="{{ url('/') }}/frontview/images/event03.jpg" alt="Image" class="img"></a>
+                        <figure> <a href="#"><img src="{{ url('public') }}/frontview/images/event03.jpg" alt="Image" class="img"></a>
                             <div class="info">
-                                <figure class="i"><img src="{{ url('/') }}/frontview/images/icon-info.png" alt="Image"></figure>
+                                <figure class="i"><img src="{{ url('public') }}/frontview/images/icon-info.png" alt="Image"></figure>
                                 <span>50% off exhibitions</span>
                             </div>
                             <!-- end info -->
@@ -224,7 +224,7 @@
             <div class="row justify-content-center">
                 <div class="col-12">
                     <div class="section-title text-center">
-                        <figure><img src="{{ url('/') }}/assets/images/logo/logo.png" alt="Image">
+                        <figure><img src="{{ url('public') }}/assets/images/logo/logo.png" alt="Image">
                         </figure>
                         <h2>Warisan Budaya Abad Sembilan Belas</h2>
                     </div>
@@ -281,17 +281,17 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-3">
-                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('/') }}/frontview/images/image01.jpg" alt="Image">
+                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('public') }}/frontview/images/image01.jpg" alt="Image">
                                 </figure>
                             </div>
                             <!-- end col-3 -->
                             <div class="col-md-4 offset-md-1">
-                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('/') }}/frontview/images/image02.jpg" alt="Image">
+                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('public') }}/frontview/images/image02.jpg" alt="Image">
                                 </figure>
                             </div>
                             <!-- end col-3 -->
                             <div class="col-md-2 offset-md-1">
-                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('/') }}/frontview/images/image03.jpg" alt="Image">
+                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('public') }}/frontview/images/image03.jpg" alt="Image">
                                 </figure>
                             </div>
                             <!-- end col-3 -->
@@ -305,17 +305,17 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-3">
-                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('/') }}/frontview/images/image01.jpg" alt="Image">
+                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('public') }}/frontview/images/image01.jpg" alt="Image">
                                 </figure>
                             </div>
                             <!-- end col-3 -->
                             <div class="col-md-4 offset-md-1">
-                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('/') }}/frontview/images/image02.jpg" alt="Image">
+                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('public') }}/frontview/images/image02.jpg" alt="Image">
                                 </figure>
                             </div>
                             <!-- end col-3 -->
                             <div class="col-md-2 offset-md-1">
-                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('/') }}/frontview/images/image03.jpg" alt="Image">
+                                <figure class="image-box" data-scroll data-scroll-speed="0"> <img src="{{ url('public') }}/frontview/images/image03.jpg" alt="Image">
                                 </figure>
                             </div>
                             <!-- end col-3 -->
@@ -339,7 +339,7 @@
             <div class="row justify-content-center">
                 <div class="col-12">
                     <div class="section-title text-center">
-                        <figure><img src="{{ url('/') }}/assets/images/logo/logo.png" alt="Image">
+                        <figure><img src="{{ url('public') }}/assets/images/logo/logo.png" alt="Image">
                         </figure>
                         <h6>Dapatkan Pembaruan dan Berita Terkini</h6>
                         <h2>Berita Terbaru</h2>

@@ -19,7 +19,7 @@
                             <div class="carousel-inner">
                                 @foreach($produk->carousels as $index => $carousel)
                                 <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
-                                    <img class="d-block w-100" src="{{ asset($carousel->foto) }}" alt="{{ $carousel->alt_text }}">
+                                    <img class="d-block w-100" src="{{ url('public') }}/{{$carousel->foto}}" alt="{{ $carousel->alt_text }}">
                                 </div>
                                 @endforeach
                             </div>

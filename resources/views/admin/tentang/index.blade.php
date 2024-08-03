@@ -31,7 +31,6 @@
                         <td class="text-center">{{ $tentang->judul }}</td>
                         <!-- <td class="text-center">
                             <div>
-
                                 {!! Str::limit($tentang->deskripsi, 100, '...') !!}
                             </div>
                         </td> -->

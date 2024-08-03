@@ -32,7 +32,7 @@
                             <td class="text-center">{{ $pengrajin->nama }}</td>
                             <td class="text-center">
                                 @if ($pengrajin->foto)
-                                    <img src="{{ url($pengrajin->foto) }}" alt="{{ $pengrajin->nama }}"
+                                    <img src="{{ url('public') }}/{{$pengrajin->foto}}" alt="{{ $pengrajin->nama }}"
                                         style="max-width: 60px; max-height: 60px;">
                                 @endif
                             </td>

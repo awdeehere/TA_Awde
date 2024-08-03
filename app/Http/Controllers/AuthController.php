@@ -16,13 +16,22 @@ class AuthController extends Controller
         return view('auth.login');
     }
 
-    public function loginProcess()
+    public function loginProcess(Request $request)
     {
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required'
+        ], [
+            'email.required' => 'Email wajib diisi.',
+            'email.email' => 'Email harus berupa alamat email yang valid.',
+            'password.required' => 'Password wajib diisi.'
+        ]);
+    
         $credential = [
-            'email' => request('email'),
-            'password' => request('password')
+            'email' => $request->email,
+            'password' => $request->password
         ];
-
+    
         if (auth()->attempt($credential)) {
             $user = auth()->user();
             if ($user->type == 'ADMIN') {
@@ -34,6 +43,7 @@ class AuthController extends Controller
             return view('auth.login', ['message' => 'Login Gagal, Silahkan Cek Email dan Password']);
         }
     }
+    
 
     /**
      * Destroy an authenticated session.

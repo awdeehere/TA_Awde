@@ -1,14 +1,14 @@
 <div class="header">
     <div class="logo logo-dark">
         <a href="">
-            <img src="{{ url('/') }}/assets/images/logo/kain.png" alt="Logo" width="150" height="47" class="mt-2">
-            <img class="logo-fold mt-2 ml-3" src="{{ url('/') }}/assets/images/logo/logo.png" alt="Logo" width="50" height="51">
+            <img src="{{ url('public') }}/assets/images/logo/kain.png" alt="Logo" width="150" height="47" class="mt-2">
+            <img class="logo-fold mt-2 ml-3" src="{{ url('public') }}/assets/images/logo/logo.png" alt="Logo" width="50" height="51">
         </a>
     </div>
     <div class="logo logo-white">
         <a href="index.html">
-            <img src="{{ url('/') }}/assets/images/logo/logo-white.png" alt="Logo">
-            <img class="logo-fold p-4" src="{{ url('/') }}/assets/images/logo/logo-fold-white.png" alt="Logo">
+            <img src="{{ url('public') }}/assets/images/logo/logo-white.png" alt="Logo">
+            <img class="logo-fold p-4" src="{{ url('public') }}/assets/images/logo/logo-fold-white.png" alt="Logo">
         </a>
     </div>
     <div class="nav-wrap">
@@ -38,7 +38,7 @@
                             @if (auth()->user()->foto)
                             <img src="{{url('/'.auth()->user()->foto)}}" alt="User Image" style="width: 60px;height: 60px; padding: 10px; margin: 0px; " class="img-circle">
                             @else
-                            <img src="{{url('/')}}/images/profile.jpg" alt="User Avatar" style="width: 60px;height: 60px; padding: 10px; margin: 0px; " class="img-circle">
+                            <img src="{{url('public')}}/images/profile.jpg" alt="User Avatar" style="width: 60px;height: 60px; padding: 10px; margin: 0px; " class="img-circle">
                             @endif
                         </span>
                     </div>

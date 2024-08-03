@@ -7,20 +7,20 @@
     <title>Kain Pelangi | Admin</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ url('/') }}/assets/images/logo/logo.ico">
+    <link rel="shortcut icon" href="{{ url('public') }}/assets/images/logo/logo.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- page css -->
-    <link href="{{ url('/') }}/assets/vendors/select2/select2.css" rel="stylesheet">
-    <link href="{{ url('/') }}/assets/vendors/datatables/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="{{ url('/') }}/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="{{ url('public') }}/assets/vendors/select2/select2.css" rel="stylesheet">
+    <link href="{{ url('public') }}/assets/vendors/datatables/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url('public') }}/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
 
     <!-- Core css -->
-    <link href="{{ url('/') }}/assets/css/app.min.css" rel="stylesheet">
-    <link href="{{ url('/') }}/assets/css/simadu.css" rel="stylesheet">
+    <link href="{{ url('public') }}/assets/css/app.min.css" rel="stylesheet">
+    <link href="{{ url('public') }}/assets/css/simadu.css" rel="stylesheet">
 
     <!-- summernote -->
-    <link rel="stylesheet" href="{{ url('/') }}/assets/plugins/summernote/summernote-bs4.min.css">
+    <link rel="stylesheet" href="{{ url('public') }}/assets/plugins/summernote/summernote-bs4.min.css">
     <style>
         .truncate {
             width: 200px;
@@ -48,7 +48,7 @@
             <!-- Page Container START -->
             <div class="page-container">
                 <!-- Content Wrapper START -->
-                <div class="main-content" style="background-image: url('{{ url('/') }}/assets/images/others/bg_TA-03.jpg'); background-size: cover;">
+                <div class="main-content" style="background-image: url('{{ url('public') }}/assets/images/others/bg_TA-03.jpg'); background-size: cover;">
                     <div class="container-fluid pt-4">
                         <div class="row">
                             <div class="col-md-12">
@@ -125,7 +125,7 @@
                                 <h5 class="m-b-20">Members</h5>
                                 <div class="d-flex m-b-30">
                                     <div class="avatar avatar-image">
-                                        <img src="{{ url('/') }}/assets/images/avatars/thumb-1.jpg" alt="">
+                                        <img src="{{ url('public') }}/assets/images/avatars/thumb-1.jpg" alt="">
                                     </div>
                                     <div class="m-l-15">
                                         <a href="javascript:void(0);" class="text-dark m-b-0 font-weight-semibold">Erin
@@ -135,7 +135,7 @@
                                 </div>
                                 <div class="d-flex m-b-30">
                                     <div class="avatar avatar-image">
-                                        <img src="{{ url('/') }}/assets/images/avatars/thumb-2.jpg" alt="">
+                                        <img src="{{ url('public') }}/assets/images/avatars/thumb-2.jpg" alt="">
                                     </div>
                                     <div class="m-l-15">
                                         <a href="javascript:void(0);" class="text-dark m-b-0 font-weight-semibold">Darryl Day</a>
@@ -144,7 +144,7 @@
                                 </div>
                                 <div class="d-flex m-b-30">
                                     <div class="avatar avatar-image">
-                                        <img src="{{ url('/') }}/assets/images/avatars/thumb-3.jpg" alt="">
+                                        <img src="{{ url('public') }}/assets/images/avatars/thumb-3.jpg" alt="">
                                     </div>
                                     <div class="m-l-15">
                                         <a href="javascript:void(0);" class="text-dark m-b-0 font-weight-semibold">Marshall Nichols</a>
@@ -156,7 +156,7 @@
                                 <h5 class="m-b-20">News</h5>
                                 <div class="d-flex m-b-30">
                                     <div class="avatar avatar-image">
-                                        <img src="{{ url('/') }}/assets/images/others/img-1.jpg" alt="">
+                                        <img src="{{ url('public') }}/assets/images/others/img-1.jpg" alt="">
                                     </div>
                                     <div class="m-l-15">
                                         <a href="javascript:void(0);" class="text-dark m-b-0 font-weight-semibold">5
@@ -178,25 +178,25 @@
 
 
     <!-- Core Vendors JS -->
-    <script src="{{ url('/') }}/assets/js/vendors.min.js"></script>
+    <script src="{{ url('public') }}/assets/js/vendors.min.js"></script>
 
     <!-- page js -->
-    <script src="{{ url('/') }}/assets/vendors/select2/select2.min.js"></script>
-    <script src="{{ url('/') }}/assets/vendors/chartjs/Chart.min.js"></script>
-    <script src="{{ url('/') }}/assets/js/pages/dashboard-default.js"></script>
-    <script src="{{ url('/') }}/assets/vendors/datatables/jquery.dataTables.min.js"></script>
-    <script src="{{ url('/') }}/assets/vendors/datatables/dataTables.bootstrap.min.js"></script>
-    <script src="{{ url('/') }}/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="{{ url('public') }}/assets/vendors/select2/select2.min.js"></script>
+    <script src="{{ url('public') }}/assets/vendors/chartjs/Chart.min.js"></script>
+    <script src="{{ url('public') }}/assets/js/pages/dashboard-default.js"></script>
+    <script src="{{ url('public') }}/assets/vendors/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{ url('public') }}/assets/vendors/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="{{ url('public') }}/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
 
     <!-- Core css -->
-    <link href="{{ url('/') }}/assets/css/app.min.css" rel="stylesheet">
-    <link href="{{ url('/') }}/assets/css/simadu.css" rel="stylesheet">
+    <link href="{{ url('public') }}/assets/css/app.min.css" rel="stylesheet">
+    <link href="{{ url('public') }}/assets/css/simadu.css" rel="stylesheet">
 
     <!-- Summernote -->
-    <script src="{{ url('/') }}/assets/plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="{{ url('public') }}/assets/plugins/summernote/summernote-bs4.min.js"></script>
 
     <!-- Core JS -->
-    <script src="{{ url('/') }}/assets/js/app.min.js"></script>
+    <script src="{{ url('public') }}/assets/js/app.min.js"></script>
     <script>
         $(function() {
             // Summernote

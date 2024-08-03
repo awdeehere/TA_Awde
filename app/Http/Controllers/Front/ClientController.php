@@ -9,6 +9,8 @@ use App\Models\Admin\Pengrajin;
 use App\Models\Admin\Sejarah;
 use App\Models\Admin\Produk;
 use App\Models\Admin\Tentang;
+use App\Models\Admin\i\Info;
+use App\Models\Admin\VideoPembuatan;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -22,10 +24,10 @@ class ClientController extends Controller
 
     function galeri()
     {
-        $sejarah = Sejarah::first();
         $penghargaan = Penghargaan::all();
         $pengrajin = Pengrajin::all();
-        return view('frontview.galeri', compact('sejarah', 'penghargaan', 'pengrajin'));
+        $video_pembuatan = VideoPembuatan::all();
+        return view('frontview.galeri', compact( 'video_pembuatan', 'penghargaan', 'pengrajin'));
     }
 
     function katalog()
@@ -45,5 +47,11 @@ class ClientController extends Controller
         $artikel = Artikel::where('slug', $slug)->firstOrFail();
 
         return view('frontview.artikel', compact('artikel'));
+    }
+
+    function info()
+    {
+        $sejarah = Sejarah::first();
+        return view('frontview.info', compact('sejarah'));
     }
 }

@@ -13,6 +13,7 @@ class Pengrajin extends ModelAuthenticate
     protected $fillable = [
         'foto',
         'nama',
+        'deskripsi',
     ];
 
 

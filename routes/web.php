@@ -48,6 +48,7 @@ Route::get('/', [ClientController::class, 'home']);
 Route::get('home', [ClientController::class, 'home']);
 Route::get('galeri', [ClientController::class, 'galeri']);
 Route::get('katalog', [ClientController::class, 'katalog']);
+Route::get('info', [ClientController::class, 'info']);
 Route::get('about', [ClientController::class, 'about']);
 Route::get('product/{produk}', [ClientController::class, 'product']);
 Route::get('artikel/{slug}', [ClientController::class, 'artikel']);

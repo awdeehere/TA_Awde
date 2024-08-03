@@ -16,8 +16,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="" class="control-label mt-3">JUDUL </label>
-                                <input type="text" class="form-control" name="judul"
-                                    value="{{ $artikel->judul }}">
+                                <input type="text" class="form-control" name="judul" value="{{ old('judul', $artikel->judul) }}">
                                 @error('judul')
                                     <p class="text-danger" style="font-size: 12px">* {{ $message }}</p
                                         style="font-size: 12px">
@@ -25,17 +24,15 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="" class="control-label mt-3">THUMBNAIL</label>
-                                <input type="file" name="foto" class="form-control mb-3"
-                                    value="{{ $artikel->thumbnail }}">
+                                <input type="file" name="thumbnail" class="form-control mb-3" value="{{ old('thumbnail', $artikel->thumbnail) }}">
                                 @error('tumbnail')
                                     <p class="text-danger" style="font-size: 12px">* {{ $message }}</p
                                         style="font-size: 12px">
                                 @enderror
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <label for="" class="control-label mt-3">KONTEN</label>
-                                <input type="text" name="tahun" class="form-control mb-3"
-                                    value="{{ $artikel->konten }}">
+                                <textarea type="text" class="form-control" name="konten" id="summernote" cols="30" rows="6">{{ old('konten', $artikel->konten) }}</textarea>
                                 @error('konten')
                                     <p class="text-danger" style="font-size: 12px">* {{ $message }}</p
                                         style="font-size: 12px">

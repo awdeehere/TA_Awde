@@ -33,8 +33,7 @@
                             <td class="text-center">{{ $artikel->judul }}</td>
                             <td class="text-center">
                                 @if ($artikel->thumbnail)
-                                    <img src="{{ url(public/$artikel->thumbnail) }}" alt="{{ $artikel->thumbnail }}"
-                                        style="max-width: 60px; max-height: 60px;">
+                                    <img src="{{ url('public') }}/{{$artikel->thumbnail}}" alt="{{ $artikel->thumbnail }}" style="max-width: 60px; max-height: 60px;">
                                 @endif
                             </td>
                         </tr>

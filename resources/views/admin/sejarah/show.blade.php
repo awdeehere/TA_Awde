@@ -10,7 +10,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="card" style="width: 25rem;">
                     <div class="card-body">
-                        <img src="{{ url($sejarah->gambar) }}" class="img-fluid" alt="">
+                        <img src="{{ url('public') }}/{{$sejarah->gambar}}" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>

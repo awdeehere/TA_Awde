@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#feed01" />
     <title>KAIN PELANGI</title>
-    <link rel="shortcut icon" href="{{ url('/') }}/assets/images/logo/logo.ico">
+    <link rel="shortcut icon" href="{{ url('public') }}/assets/images/logo/logo.ico">
     <meta name="author" content="Themezinho">
     <meta name="description" content="For all kind of exhibition museum website">
     <meta name="keywords" content="wandau, exhibition, museum, art, history, entry, ticket, contemporary, modern, booking, visit, culture, life, centuries, roots, fancy, themezinho">
@@ -35,20 +35,20 @@
     <link href="ico/favicon.png" rel="shortcut icon">
 
     <!-- CSS FILES -->
-    <link rel="stylesheet" href="{{ url('/') }}/frontview/css/fontawesome.min.css">
-    <link rel="stylesheet" href="{{ url('/') }}/frontview/css/odometer.min.css">
-    <link rel="stylesheet" href="{{ url('/') }}/frontview/css/fancybox.min.css">
-    <link rel="stylesheet" href="{{ url('/') }}/frontview/css/swiper.min.css">
-    <link rel="stylesheet" href="{{ url('/') }}/frontview/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ url('/') }}/frontview/css/style.css">
+    <link rel="stylesheet" href="{{ url('public') }}/frontview/css/fontawesome.min.css">
+    <link rel="stylesheet" href="{{ url('public') }}/frontview/css/odometer.min.css">
+    <link rel="stylesheet" href="{{ url('public') }}/frontview/css/fancybox.min.css">
+    <link rel="stylesheet" href="{{ url('public') }}/frontview/css/swiper.min.css">
+    <link rel="stylesheet" href="{{ url('public') }}/frontview/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url('public') }}/frontview/css/style.css">
 
     <!-- page css -->
-    <!-- <link href="{{ url('/') }}/assets/vendors/select2/select2.css" rel="stylesheet">
-    <link href="{{ url('/') }}/assets/vendors/datatables/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="{{ url('/') }}/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
+    <!-- <link href="{{ url('public') }}/assets/vendors/select2/select2.css" rel="stylesheet">
+    <link href="{{ url('public') }}/assets/vendors/datatables/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url('public') }}/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
 
     <!-- Core css -->
-    <!-- <link href="{{ url('/') }}/assets/css/app.min.css" rel="stylesheet"> -->
+    <!-- <link href="{{ url('public') }}/assets/css/app.min.css" rel="stylesheet"> -->
 
     <style>
         .page-header {
@@ -110,7 +110,7 @@
         </svg>
         <div class="inner">
             <canvas class="progress-bar" id="progress-bar" width="200" height="200"></canvas>
-            <figure><img src="{{ url('/') }}/assets/images/logo/logo.png" alt="Image"></figure>
+            <figure><img src="{{ url('public') }}/assets/images/logo/logo.png" alt="Image"></figure>
             <small>Loading</small>
         </div>
         <!-- end inner -->
@@ -158,12 +158,12 @@
                 <svg viewBox="0 0 600 1080" preserveAspectRatio="none" version="1.1">
                     <path d="M540,1080H0V0h540c0,179.85,0,359.7,0,539.54C540,719.7,540,899.85,540,1080z"></path>
                 </svg>
-                <figure class="logo"> <img src="{{ url('/') }}/assets/images/logo/kain.png" alt="Image">
+                <figure class="logo"> <img src="{{ url('public') }}/assets/images/logo/kain.png" alt="Image">
                 </figure>
                 <!-- end logo -->
                 <div class="inner">
                     <div class="widget">
-                        <figure><img src="{{ url('/') }}/frontview/images/Gallery.jpg" alt="Image"></figure>
+                        <figure><img src="{{ url('public') }}/frontview/images/Gallery.jpg" alt="Image"></figure>
                         <p>deskripsi Kain Pelangi</p>
                         <!-- <p>
                             Kain Pelangi adalah wastra asal Ketapang, Kalimantan Barat yang dibuat dari nilai-nilai
@@ -219,32 +219,32 @@
     </div>
 
     <!-- JS FILES -->
-    <script src="{{ url('/') }}/frontview/js/jquery.min.js"></script>
-    <script src="{{ url('/') }}/frontview/js/bootstrap.min.js"></script>
-    <script src="{{ url('/') }}/frontview/js/gsap.min.js"></script>
-    <script src="{{ url('/') }}/frontview/js/locomotive-scroll.min.js"></script>
-    <script src="{{ url('/') }}/frontview/js/ScrollTrigger.min.js"></script>
-    <script src="{{ url('/') }}/frontview/js/kinetic-slider.js"></script>
-    <script src="{{ url('/') }}/frontview/js/fancybox.min.js"></script>
-    <script src="{{ url('/') }}/frontview/js/odometer.min.js"></script>
-    <script src="{{ url('/') }}/frontview/js/swiper.min.js"></script>
-    <script src="{{ url('/') }}/frontview/js/scripts.js"></script>
+    <script src="{{ url('public') }}/frontview/js/jquery.min.js"></script>
+    <script src="{{ url('public') }}/frontview/js/bootstrap.min.js"></script>
+    <script src="{{ url('public') }}/frontview/js/gsap.min.js"></script>
+    <script src="{{ url('public') }}/frontview/js/locomotive-scroll.min.js"></script>
+    <script src="{{ url('public') }}/frontview/js/ScrollTrigger.min.js"></script>
+    <script src="{{ url('public') }}/frontview/js/kinetic-slider.js"></script>
+    <script src="{{ url('public') }}/frontview/js/fancybox.min.js"></script>
+    <script src="{{ url('public') }}/frontview/js/odometer.min.js"></script>
+    <script src="{{ url('public') }}/frontview/js/swiper.min.js"></script>
+    <script src="{{ url('public') }}/frontview/js/scripts.js"></script>
     <!-- Core Vendors JS -->
-    <script src="{{ url('/') }}/assets/js/vendors.min.js"></script>
+    <script src="{{ url('public') }}/assets/js/vendors.min.js"></script>
 
     <!-- page js -->
-    <script src="{{ url('/') }}/assets/vendors/select2/select2.min.js"></script>
-    <script src="{{ url('/') }}/assets/vendors/chartjs/Chart.min.js"></script>
-    <script src="{{ url('/') }}/assets/js/pages/dashboard-default.js"></script>
-    <script src="{{ url('/') }}/assets/vendors/datatables/jquery.dataTables.min.js"></script>
-    <script src="{{ url('/') }}/assets/vendors/datatables/dataTables.bootstrap.min.js"></script>
-    <script src="{{ url('/') }}/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="{{ url('public') }}/assets/vendors/select2/select2.min.js"></script>
+    <script src="{{ url('public') }}/assets/vendors/chartjs/Chart.min.js"></script>
+    <script src="{{ url('public') }}/assets/js/pages/dashboard-default.js"></script>
+    <script src="{{ url('public') }}/assets/vendors/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{ url('public') }}/assets/vendors/datatables/dataTables.bootstrap.min.js"></script>
+    <script src="{{ url('public') }}/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
 
     <!-- Summernote -->
-    <script src="{{ url('/') }}/assets/plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="{{ url('public') }}/assets/plugins/summernote/summernote-bs4.min.js"></script>
 
     <!-- Core JS -->
-    <script src="{{ url('/') }}/assets/js/app.min.js"></script>
+    <script src="{{ url('public') }}/assets/js/app.min.js"></script>
 
     <script>
         $(document).on('click', '.detail-trigger', function(event) {

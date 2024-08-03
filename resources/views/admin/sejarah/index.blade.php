@@ -30,7 +30,7 @@
                         <td>{{ $sejarah->nama }}</td>
                         <td class="text-center">
                             @if ($sejarah->gambar)
-                            <img src="{{ url($sejarah->gambar) }}" alt="{{ $sejarah->nama }}" style="max-width: 60px; max-height: 60px;">
+                            <img src="{{ url('public') }}/{{$sejarah->gambar}}" alt="{{ $sejarah->nama }}" style="max-width: 60px; max-height: 60px;">
                             @endif
                         </td>
                     </tr>

@@ -13,28 +13,25 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="" class="control-label mt-3">NAMA </label>
-                                <input type="text" class="form-control" name="nama" value="">
+                                <input type="text" class="form-control" name="nama" value="{{ old('nama') }}">
                                 @error('nama')
-                                    <p class="text-danger" style="font-size: 12px">* {{ $message }}</p
-                                        style="font-size: 12px">
+                                    <p class="text-danger" style="font-size: 12px">* {{ $message }}</p>
                                 @enderror
                             </div>
                             <div class="col-md-6">
                                 <label for="" class="control-label mt-3">UPLOAD GAMBAR</label>
                                 <input type="file" name="gambar" class="form-control mb-3">
                                 @error('gambar')
-                                    <p class="text-danger" style="font-size: 12px">* {{ $message }}</p
-                                        style="font-size: 12px">
+                                    <p class="text-danger" style="font-size: 12px">* {{ $message }}</p>
                                 @enderror
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <label for="" class="control-label mt-3">DESKRIPSI </label>
-                                <textarea type="text" class="form-control" name="deskripsi" id="summernote" cols="30" rows="6"></textarea>
+                                <textarea class="form-control" name="deskripsi" id="summernote" cols="30" rows="6">{{ old('deskripsi') }}</textarea>
                                 @error('deskripsi')
-                                    <p class="text-danger" style="font-size: 12px">* {{ $message }}</p
-                                        style="font-size: 12px">
+                                    <p class="text-danger" style="font-size: 12px">* {{ $message }}</p>
                                 @enderror
                             </div>
                         </div>

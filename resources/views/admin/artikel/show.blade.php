@@ -10,17 +10,17 @@
             <div class="row d-flex justify-content-center">
                 <div class="card" style="width: 25rem;">
                     <div class="card-body">
-                        <img src="{{ url($artikel->thumbnail) }}" class="img-fluid" alt="">
+                        <img src="{{ url('public') }}/{{$artikel->thumbnail}}" alt="{{ $artikel->thumbnail }}" class="img-fluid">
                     </div>
                 </div>
             </div>
             <br>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <dt class="font-weight-bold">JUDUL</dt>
                     <dd>{{ $artikel->judul }}</dd>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <dt class="font-weight-bold">KONTEN</dt>
                     <textarea class="form-control" rows="10" disabled>{{ strip_tags($artikel->konten) }}</textarea>
                 </div>
