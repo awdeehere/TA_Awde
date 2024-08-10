@@ -40,15 +40,13 @@ class PengrajinController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'nama' => 'required|string|max:255',
-            'deskripsi' => 'required|string|max:255',
+            'deskripsi' => 'required',
             'foto' => 'required|image|mimes:png,jpg,jpeg|max:5120',
         ], [
             'nama.required' => 'Nama Harus Diisi',
             'nama.string' => 'Nama Harus Berupa Kalimat',
             'nama.max' => 'Nama Maksimal 255 Karakter',
             'deskripsi.required' => 'Deskripsi Harus Diisi',
-            'deskripsi.string' => 'Deskripsi Harus Berupa Kalimat',
-            'deskripsi.max' => 'Deskripsi Maksimal 255 Karakter',
             'foto.required' => 'Gambar Harus Diisi',
             'foto.image' => 'Gambar Harus Berupa Gambar',
             'foto.mimes' => 'Gambar Harus Berekstensi png, jpg, atau jpeg',
@@ -76,16 +74,13 @@ class PengrajinController extends Controller
 
         $validator = Validator::make($request->all(), [
             'nama' => 'required|string|max:255',
-            'deskripsi' => 'required|string|max:255',
-            'foto' => 'required|image|mimes:png,jpg,jpeg|max:5120',
+            'deskripsi' => 'required',
+            'foto' => 'image|mimes:png,jpg,jpeg|max:5120',
         ], [
             'nama.required' => 'Nama Harus Diisi',
             'nama.string' => 'Nama Harus Berupa Kalimat',
             'nama.max' => 'Nama Maksimal 255 Karakter',
             'deskripsi.required' => 'Deskripsi Harus Diisi',
-            'deskripsi.string' => 'Deskripsi Harus Berupa Kalimat',
-            'deskripsi.max' => 'Deskripsi Maksimal 255 Karakter',
-            'foto.required' => 'Gambar Harus Diisi',
             'foto.image' => 'Gambar Harus Berupa Gambar',
             'foto.mimes' => 'Gambar Harus Berekstensi png, jpg, atau jpeg',
             'foto.max' => 'Gambar Tidak Boleh Lebih Dari 5 MB',

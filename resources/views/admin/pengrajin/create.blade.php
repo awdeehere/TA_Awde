@@ -20,8 +20,8 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="" class="control-label mt-3">UPLOAD GAMBAR</label>
-                                <input type="file" name="gambar" class="form-control mb-3">
-                                @error('gambar')
+                                <input type="file" name="foto" class="form-control mb-3">
+                                @error('foto')
                                     <p class="text-danger" style="font-size: 12px">* {{ $message }}</p>
                                 @enderror
                             </div>

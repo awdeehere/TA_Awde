@@ -94,7 +94,6 @@ class ProdukController extends Controller
         $validator = Validator::make($request->all(), [
             'nama_motif' => 'required|string|max:255',
             'deskripsi' => 'required',
-            'foto' => 'required|max:5120',
             'hak_cipta' => 'required',
             'warna' => 'required',
             'cara_perawatan' => 'required',
@@ -106,7 +105,6 @@ class ProdukController extends Controller
             'nama_motif.string' => 'Nama Harus Berupa Kalimat',
             'nama_motif.max' => 'Nama Maksimal 255 Karakter',
             'deskripsi.required' => 'Deskripsi Harus Diisi',
-            'foto.required' => 'Gambar Harus Diisi',
             // 'foto.image' => 'Gambar Harus Berupa Gambar',
             // 'foto.mimes' => 'Gambar Harus Berekstensi png, jpg, atau jpeg',
             'foto.max' => 'Gambar Tidak Boleh Lebih Dari 5 MB',
@@ -125,12 +123,17 @@ class ProdukController extends Controller
 
         $produk = Produk::find($id);
         if (request('nama')) $produk->nama_motif = request('nama');
+        if (request('hak_cipta')) $produk->hak_cipta = request('hak_cipta');
+        if (request('warna')) $produk->warna = request('warna');
+        if (request('lebar_kain')) $produk->lebar_kain = request('lebar_kain');
+        if (request('jenis_produk')) $produk->jenis_produk = request('jenis_produk');
         if (request('deskripsi')) $produk->deskripsi = request('deskripsi');
+        if (request('cara_perawatan')) $produk->cara_perawatan = request('cara_perawatan');
         $produk->save();
 
-        if (request('foto')) $id_produk = $produk->id;
-        $produk = new ProdukCarousel();
-        $produk->handleUploadImage($id_produk);
+        // if (request('foto')) $id_produk = $produk->id;
+        // $produk = new ProdukCarousel();
+        // $produk->handleUploadImage($id_produk);
 
         return redirect('admin/produk')->with('success', 'Data Berhasil di Edit');
     }

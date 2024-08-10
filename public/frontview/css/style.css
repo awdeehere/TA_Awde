@@ -67,6 +67,16 @@ theme.
   outline: none !important;
 }
 
+/* Gaya untuk link aktif */
+.site-menu ul li a.active {
+  color: #ffffff; /* Mengubah warna teks menjadi putih agar lebih terlihat */
+  /* background-color: #FDCC05; Menambahkan latar belakang kuning agar kontras */
+  border-radius: 5px; /* Memberikan sedikit rounding pada sudut */
+  padding: 5px 10px; /* Memberikan padding agar lebih tebal */
+  font-weight: bold; /* Membuat teks lebih tebal */
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -2630,8 +2640,8 @@ button[type="submit"] i {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background: #FDCC05;
-  color: #080808;
+  background: #d6ac04cc;
+  color: #000000;
   padding: 60px;
   margin: 50px 0;
 }
